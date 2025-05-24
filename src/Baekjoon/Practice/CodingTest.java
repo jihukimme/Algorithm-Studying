@@ -1,6 +1,10 @@
 package Baekjoon.Practice;
 
 import java.io.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Stack;
+import java.util.StringTokenizer;
 
 //class IOControll {
 //    //이놈들을 사용하는 이유 : 데이터를 buffer라는 임시 메모리에 저장한 후 한번에 읽어 속도가 빠름(성능이 개선 됨)
@@ -72,14 +76,14 @@ import java.io.*;
 //        bw.flush();
 //        bw.close();
 //
-////        sb.append(result);
-////        System.out.println(sb);
+/// /        sb.append(result);
+/// /        System.out.println(sb);
 //}
 
 //class Sol5073 {
 //    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //
-////        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+/// /        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 //
 //    StringBuilder sb = new StringBuilder();
 //
@@ -155,7 +159,7 @@ import java.io.*;
 //
 //    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //
-////        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+/// /        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 //
 //    char[] val= br.readLine().toLowerCase().toCharArray();
 //
@@ -189,11 +193,11 @@ import java.io.*;
 //class Sol11723 {
 //    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //
-////       StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+/// /       StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 //
 //    StringBuilder sb = new StringBuilder();
 //
-////       int[] s = new int[num];
+/// /       int[] s = new int[num];
 //
 //    int num = Integer.parseInt(br.readLine());
 //
@@ -249,7 +253,7 @@ import java.io.*;
 //                break;
 //        }
 //
-////            System.out.println(sb);
+/// /            System.out.println(sb);
 //
 //    }
 //
@@ -323,21 +327,21 @@ import java.io.*;
 //        System.out.println(sb);
 //
 //
-////        // 기본적인 오름차순 구현
-////        int[] arr1 = {900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919};
-////        int[] arr2 = {919, 918, 917, 916, 915, 914, 913, 912, 911, 910, 909, 908,907, 906, 905, 904, 903, 902, 901, 900};
-////        int[] arr3 = {901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 900};
-////        int[] arr4 = {918, 917, 916, 915, 914, 913, 912, 911, 910, 909, 908, 907, 906, 905, 904, 903, 902, 901, 900, 919};
-////
-////        for(int i=0; i<arr.length; i++) {
-////            for(int j=i+1; j<arr.length; j++) {
-////                if(arr[i] > arr[j]) { //오름차순
-////                    int tmp = arr[i];
-////                    arr[i] = arr[j];
-////                    arr[j] = tmp;
-////                }
-////            }
-////        }
+/// /        // 기본적인 오름차순 구현
+/// /        int[] arr1 = {900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919};
+/// /        int[] arr2 = {919, 918, 917, 916, 915, 914, 913, 912, 911, 910, 909, 908,907, 906, 905, 904, 903, 902, 901, 900};
+/// /        int[] arr3 = {901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 900};
+/// /        int[] arr4 = {918, 917, 916, 915, 914, 913, 912, 911, 910, 909, 908, 907, 906, 905, 904, 903, 902, 901, 900, 919};
+/// /
+/// /        for(int i=0; i<arr.length; i++) {
+/// /            for(int j=i+1; j<arr.length; j++) {
+/// /                if(arr[i] > arr[j]) { //오름차순
+/// /                    int tmp = arr[i];
+/// /                    arr[i] = arr[j];
+/// /                    arr[j] = tmp;
+/// /                }
+/// /            }
+/// /        }
 //
 //}
 
@@ -501,7 +505,7 @@ import java.io.*;
 //}
 
 //class Sol25757 {
-//// 윷놀이Y(2명), 그림찾기F(3명), 원카드O(4명)
+/// / 윷놀이Y(2명), 그림찾기F(3명), 원카드O(4명)
 //    //플레이 신청 횟수 N
 //    //한번 같이 플레이한 사람과는 다시 플레이하지 않는다.
 //    //동명이인 없다.
@@ -562,10 +566,10 @@ import java.io.*;
 //
 //        for(int i=0; i<n; i++){
 //            String str = br.readLine();
-////            StringTokenizer st = new StringTokenizer(str);
+/// /            StringTokenizer st = new StringTokenizer(str);
 //
 //            for(int j=0; j<n; j++){
-////                String token = st.nextToken();
+/// /                String token = st.nextToken();
 //                if(str.charAt(j) == '_'){
 //                    arr[i][j] = 0;
 //                }
@@ -780,9 +784,9 @@ import java.io.*;
 //
 //    int n = Integer.parseInt(br.readLine());
 //
-////        if(n==0){
-////            return;
-////        }
+/// /        if(n==0){
+/// /            return;
+/// /        }
 //
 //    int[] arr = new int[n];
 //    int[] sortArr = new int[n];
@@ -1265,6 +1269,7 @@ import java.io.*;
 //    // DFS로 조합 생성 (6개를 선택하는 경우)
 //    public void dfs(StringBuilder sb, int[] arr, boolean[] visited, int[] selected, int depth) {
 //        if (depth == 6) {  // 6개를 선택한 경우 출력
+
 ////            for (int i = 0; i < arr.length; i++) {
 ////                if (visited[i]) {
 ////                    sb.append(arr[i]).append(" ");
@@ -1369,11 +1374,522 @@ import java.io.*;
 //    }
 //}
 
+//class Sol14467 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//
+//        int[] arr = new int[n + 1];
+//
+//        for (int i = 0; i < n + 1; i++) {
+//            arr[i] = -1;
+//        }
+//
+//        int count = 0;
+//
+//        for (int i = 1; i < n+1; i++) {
+//            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//            int cow = Integer.parseInt(st.nextToken());
+//            int position = Integer.parseInt(st.nextToken());
+//
+//            if (arr[cow] == -1) {
+//                arr[cow] = position;
+//            } else if(arr[cow] != position){
+//                count++;
+//                arr[cow] = position;
+//            }
+//        }
+//
+//        System.out.println(count);
+//
+//    }
+//}
+
+
+//class Sol21918 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//        int n = Integer.parseInt(st.nextToken());
+//        int m = Integer.parseInt(st.nextToken());
+//
+//        int[] arr = new int[n];
+//
+//        st = new StringTokenizer(br.readLine(), " ");
+//        for(int i=0; i<n; i++){
+//            arr[i] = Integer.parseInt(st.nextToken());
+//        }
+//
+//        for(int i=0; i<m; i++){
+//            st = new StringTokenizer(br.readLine(), " ");
+//
+//            int a = Integer.parseInt(st.nextToken());
+//            int l = Integer.parseInt(st.nextToken());
+//            int r = Integer.parseInt(st.nextToken());
+//
+//            if(a==1){
+//                arr[l-1] = r;
+//            }
+//            else if(a==2){
+//                for(int j=l-1; j<r; j++){
+//                    if(arr[j]==0){
+//                        arr[j]=1;
+//                    }
+//                    else{
+//                        arr[j]=0;
+//                    }
+//                }
+//            }
+//            else if(a==3){
+//                for(int j=l-1; j<r; j++){
+//                    arr[j]=0;
+//                }
+//            }
+//            else{
+//                for(int j=l-1; j<r; j++){
+//                    arr[j]=1;
+//                }
+//            }
+//        }
+//
+//        StringBuilder sb = new StringBuilder();
+//
+//        for(int i=0; i<n; i++){
+//            sb.append(arr[i]).append(" ");
+//        }
+//
+//
+//        System.out.println(sb);
+//
+//    }
+//}
+
+
+//class Sol20546 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int money = Integer.parseInt(br.readLine());
+//
+//        int[] prices = new int[14];
+//
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//        for(int i=0; i<14; i++){
+//            prices[i] = Integer.parseInt(st.nextToken());
+//        }
+//
+//        int bnpAccount = getBnpAccount(money, prices);
+//        int timingAccount = getTimingAccount(money, prices);
+//
+//        if(bnpAccount>timingAccount) {
+//            System.out.println("BNP");
+//        }
+//        else if(bnpAccount<timingAccount) {
+//            System.out.println("TIMING");
+//        }
+//        else{
+//            System.out.println("SAMESAME");
+//        }
+//    }
+//
+//    public static int getBnpAccount(int money, int[] prices){
+//        int n=0;
+//
+//        for(int i=0; i<prices.length; i++){
+//            if(money>=prices[i]){
+//                n+=money/prices[i];
+//                money=money%prices[i];
+//            }
+//        }
+//
+//        return money+n*prices[prices.length-1];
+//    }
+//
+//    public static int getTimingAccount(int money, int[] prices){
+//        int n=0;
+//
+//        for(int i=3; i<prices.length; i++){
+//            if(prices[i-3]<prices[i-2] && prices[i-2]<prices[i-1] && prices[i-1]<prices[i]){
+//                if(n>0){
+//                    money+=n*prices[i];
+//                    n=0;
+//                }
+//            }
+//            else if(prices[i-3]>prices[i-2] && prices[i-2]>prices[i-1] && prices[i-1]>prices[i]){
+//                if(money>=prices[i]){
+//                    n+=money/prices[i];
+//                    money=money%prices[i];
+//                }
+//            }
+//        }
+//
+//        return money+n*prices[prices.length-1];
+//    }
+//}
+
+//class Sol10828 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//
+//        Stack<Integer> stack = new Stack<>();
+//
+//        StringTokenizer st;
+//        for (int i = 0; i < n; i++) {
+//            st = new StringTokenizer(br.readLine(), " ");
+//
+//            String order = st.nextToken();
+//
+//            if (order.equals("push")) {
+//                int number = Integer.parseInt(st.nextToken());
+//
+//                stack.push(number);
+//            } else if (order.equals("pop")) {
+//                if (stack.isEmpty()) {
+//                    System.out.println(-1);
+//                } else {
+//                    System.out.println(stack.pop());
+//                }
+//            } else if (order.equals("size")) {
+//                System.out.println(stack.size());
+//            } else if (order.equals("empty")) {
+//                System.out.println(stack.isEmpty() ? 1 : 0);
+//            } else if (order.equals("top")) {
+//                if (stack.isEmpty()) {
+//                    System.out.println(-1);
+//                } else {
+//                    System.out.println(stack.peek());
+//                }
+//            }
+//        }
+//    }
+//}
+
+
+//class Sol1978 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//        int count = 0;
+//
+//        for(int i=0; i<n; i++){
+//            int number = Integer.parseInt(st.nextToken());
+//
+//            for(int j=2; j<=number; j++){
+//                if(number==j){
+//                    count++;
+//                }
+//
+//                if(number%j==0){
+//                    break;
+//                }
+//            }
+//        }
+//
+//        System.out.println(count);
+//    }
+//}
+
+
+//class Sol10828 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//        int count = 0;
+//
+//        for(int i=0; i<n; i++){
+//            int number = Integer.parseInt(st.nextToken());
+//
+//            for(int j=2; j<=number; j++){
+//                if(number==j){
+//                    count++;
+//                }
+//
+//                if(number%j==0){
+//                    break;
+//                }
+//            }
+//        }
+//
+//        System.out.println(count);
+//    }
+//}
+
+//class Sol10798 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        String[] arr = new String[5];
+//
+//        int max = 0;
+//
+//        for(int i=0; i<5; i++){
+//            arr[i] = br.readLine();
+//            if(max<arr[i].length()){
+//                max = arr[i].length();
+//            }
+//        }
+//
+//        String answer ="";
+//
+//        for(int i=0; i<max; i++){
+//            for(int j=0; j<5; j++){
+//                if(arr[j].length()<=i){
+//                    continue;
+//                }
+//                answer+=arr[j].charAt(i);
+//            }
+//        }
+//
+//        System.out.println(answer);
+//    }
+//}
+
+//class Sol21318 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//
+//        int[] level = new int[n];
+//
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//        for(int i=0; i<n; i++){
+//            level[i] = Integer.parseInt(st.nextToken());
+//        }
+//
+//        int q = Integer.parseInt(br.readLine());
+//        int[] prefixSum = new int[n];
+//
+//        for(int i=1; i<n; i++){
+//            int mistake = level[i-1]>level[i] ? 1:0;
+//
+//            prefixSum[i]=prefixSum[i-1]+mistake;
+//        }
+//
+//        StringBuilder sb = new StringBuilder();
+//
+//        for(int i=0; i<q; i++){
+//            st = new StringTokenizer(br.readLine(), " ");
+//
+//            int x = Integer.parseInt(st.nextToken());
+//            int y = Integer.parseInt(st.nextToken());
+//
+//            sb.append(prefixSum[y-1]-prefixSum[x-1]).append("\n");
+//
+////            int mistake = 0;
+////
+////            for(int j=x-1; j<y-1; j++){
+////                if(j==level.length-1){
+////                    break;
+////                }
+////
+////                if(level[j]>level[j+1]){
+////                    mistake++;
+////                }
+////            }
+////
+////            sb.append(mistake).append("\n");
+//        }
+//
+//        System.out.println(sb);
+//    }
+//}
+
+//class Sol21921 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//        int n = Integer.parseInt(st.nextToken());
+//        int x = Integer.parseInt(st.nextToken());
+//
+//        int[] prefixSum = new int[n];
+//        int sum = 0;
+//
+//        st = new StringTokenizer(br.readLine(), " ");
+//        for(int i=0; i<n; i++){
+//            sum += Integer.parseInt(st.nextToken());
+//            prefixSum[i] = sum;
+//        }
+//
+//        int max = prefixSum[x - 1];
+//        int cnt = 1;
+//
+//        for(int i=x; i<n; i++){
+//            sum = prefixSum[i] - prefixSum[i-x];
+//
+//            if (max < sum) {
+//                max = sum;
+//                cnt = 1;
+//            }
+//            else if(max==sum){
+//                cnt++;
+//            }
+//        }
+//
+//        StringBuilder sb = new StringBuilder();
+//
+//        if(max==0){
+//            sb.append("SAD");
+//        }
+//        else{
+//            sb.append(max).append("\n").append(cnt);
+//        }
+//
+//        System.out.println(sb);
+//    }
+//}
+
+//class Sol1343 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//
+//        int cnt = 0;
+//
+//        while(n>0){
+//            if(n%5==0){
+//                cnt+=n/5;
+//                n=n%5;
+//            }
+//            else {
+//                n=n-2;
+//                cnt++;
+//            }
+//        }
+//        if(n<0){
+//            System.out.println(-1);
+//        }
+//        else{
+//            System.out.println(cnt);
+//        }
+//    }
+//}
+
+//class Sol11508 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//
+//        Integer[] prices = new Integer[n];
+//
+//        for(int i=0; i<n; i++){
+//            prices[i] = Integer.parseInt(br.readLine());
+//        }
+//
+//        Arrays.sort(prices, Collections.reverseOrder());
+//
+//        int sum = 0;
+//
+//        for(int i=0; i<n; i++){
+//            if((i+1)%3==0){
+//                continue;
+//            }
+//            sum+=prices[i];
+//        }
+//
+//        System.out.println(sum);
+//    }
+//}
+
+//class Sol2309 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int[] arr = new int[9];
+//        int sum = 0;
+//
+//        for(int i=0; i<9; i++){
+//            arr[i] = Integer.parseInt(br.readLine());
+//            sum+=arr[i];
+//        }
+//
+//        Arrays.sort(arr);
+//
+//        int fake1 = -1;
+//        int fake2 = -1;
+//
+//        for(int i=0; i<9-1; i++){
+//            for(int j=i+1; j<9; j++){
+//                if(sum - arr[i] - arr[j] == 100){
+//                    fake1 = i;
+//                    fake2 = j;
+//                }
+//            }
+//        }
+//
+//        for(int i=0; i<9; i++){
+//            if(i==fake1 || i==fake2){
+//                continue;
+//            }
+//            System.out.println(arr[i]);
+//        }
+//    }
+//}
+
+//class Sol11047 {
+//    public void solution() throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//
+//        int n = Integer.parseInt(st.nextToken());
+//        int k = Integer.parseInt(st.nextToken());
+//
+//        int[] arr = new int[n];
+//
+//        for(int i=0; i<arr.length; i++){
+//            arr[i] = Integer.parseInt(br.readLine());
+//        }
+//
+//        int cnt = 0;
+//
+//        for(int i=arr.length-1; i>=0; i--){
+//            if(k/arr[i]>=1){
+//                cnt+=k/arr[i];
+//                k=k%arr[i];
+//            }
+//            else{
+//                continue;
+//            }
+//        }
+//
+//        System.out.println(cnt);
+//    }
+//}
+
+class Sol {
+    public void solution() throws IOException {
+
+    }
+}
 
 public class CodingTest {
     public static void main(String[] args) throws IOException {
 
-//        Sol6603_2 sol = new Sol6603_2();
-//        Sol.solution();
+//        Sol14467 sol = new Sol14467();
+//        sol.solution();
     }
 }
